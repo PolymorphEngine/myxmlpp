@@ -8,6 +8,7 @@
 
 #include <filesystem>
 #include <iostream>
+#include <sstream>
 #include "myxmlpp/Doc.hpp"
 #include "myxmlpp/exceptions/FileException.hpp"
 #include "myxmlpp/exceptions/ParsingException.hpp"
