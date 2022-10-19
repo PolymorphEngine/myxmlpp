@@ -10,7 +10,7 @@ add_executable(myxmlppexec EXCLUDE_FROM_ALL test.cpp)
 target_link_libraries(myxmlppexec PRIVATE myxmlpp)
 target_include_directories(myxmlppexec PRIVATE ${MYXMLPP_INCLUDE_DIRS})
 
-add_executable(unit-tests EXCLUDE_FROM_ALL ${UNIT_TESTS_SRCS})
+add_executable(unit-tests ${UNIT_TESTS_SRCS})
 target_link_libraries(unit-tests PRIVATE myxmlpp GTest::gtest_main)
 target_include_directories(unit-tests PRIVATE ${MYXMLPP_INCLUDE_DIRS})
 
