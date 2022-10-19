@@ -1,13 +1,19 @@
 var searchData=
 [
-  ['fileexception_0',['FileException',['../classmyxmlpp_1_1FileException.html',1,'myxmlpp']]],
-  ['findattribute_1',['findAttribute',['../classmyxmlpp_1_1Node.html#a0508f9c1e69f2ca5d825fa9fa5617998',1,'myxmlpp::Node']]],
-  ['findchild_2',['findChild',['../classmyxmlpp_1_1Node.html#a28c5e861aef5209c10ce5ff0f6adada2',1,'myxmlpp::Node']]],
-  ['findchildbypath_3',['findChildByPath',['../classmyxmlpp_1_1Node.html#a275894898256342a340a2803e387e11e',1,'myxmlpp::Node']]],
-  ['findchildbyspath_4',['findChildBySPath',['../classmyxmlpp_1_1Node.html#a4b4c2ba89a08a7d0f15c473c66dd5ceb',1,'myxmlpp::Node']]],
-  ['findchildr_5',['findChildR',['../classmyxmlpp_1_1Node.html#a4b0f9a0e16b5f313eb9d73567ae585c2',1,'myxmlpp::Node']]],
-  ['findchildren_6',['findChildren',['../classmyxmlpp_1_1Node.html#a3743d883af0c6f5b93af05969940f501',1,'myxmlpp::Node::findChildren(const std::string &amp;tag) const'],['../classmyxmlpp_1_1Node.html#a161399b23bddde0d3676ffc7a3be3193',1,'myxmlpp::Node::findChildren(const std::string &amp;tag, std::vector&lt; std::shared_ptr&lt; Node &gt; &gt; *children) const']]],
-  ['findchildrenbypath_7',['findChildrenByPath',['../classmyxmlpp_1_1Node.html#ab7d73eab0db311bff37b2c6429c7f6e4',1,'myxmlpp::Node']]],
-  ['findchildrenbyspath_8',['findChildrenBySPath',['../classmyxmlpp_1_1Node.html#a11f24ad6fa4ad92acc8ac0ad51adda9e',1,'myxmlpp::Node']]],
-  ['findchildrenr_9',['findChildrenR',['../classmyxmlpp_1_1Node.html#abe583a4e2f91aeb45c334f92d7f2ec99',1,'myxmlpp::Node']]]
+  ['getdata_0',['getData',['../classmyxmlpp_1_1Node.html#af7b5dbe8e5ba2b5fab3d2c1b72580485',1,'myxmlpp::Node']]],
+  ['getfilepath_1',['getFilepath',['../classmyxmlpp_1_1Doc.html#acdd9370c72f3dc5f7813fc559bb4b063',1,'myxmlpp::Doc']]],
+  ['getkey_2',['getKey',['../classmyxmlpp_1_1Attribute.html#aefc45c77a9b483f6ab9a46cdf491e19d',1,'myxmlpp::Attribute']]],
+  ['getnbattributes_3',['getNbAttributes',['../classmyxmlpp_1_1Node.html#aaa77b77138c4337e55ae874be7c55894',1,'myxmlpp::Node']]],
+  ['getnbattributesr_4',['getNbAttributesR',['../classmyxmlpp_1_1Node.html#afbc39c26eb9cf0371f1e70e16dcba52c',1,'myxmlpp::Node']]],
+  ['getnbchildren_5',['getNbChildren',['../classmyxmlpp_1_1Node.html#af73e2dee439c6006b7f7be862dceeb3d',1,'myxmlpp::Node']]],
+  ['getnbchildrenr_6',['getNbChildrenR',['../classmyxmlpp_1_1Node.html#abfcf2927f3067720b0dc1ca4b8620193',1,'myxmlpp::Node']]],
+  ['getparent_7',['getParent',['../classmyxmlpp_1_1Node.html#a69b1e0c929a2fee8c0dbce5c23931054',1,'myxmlpp::Node']]],
+  ['getroot_8',['getRoot',['../classmyxmlpp_1_1Doc.html#a29af1aa2a0af1e049aaa07dc5c3366c9',1,'myxmlpp::Doc']]],
+  ['gettag_9',['getTag',['../classmyxmlpp_1_1Node.html#a90053eb57876395e863532829cc955ff',1,'myxmlpp::Node']]],
+  ['getvalue_10',['getValue',['../classmyxmlpp_1_1Attribute.html#a997ac70688b3544983e40ef2193bc0fc',1,'myxmlpp::Attribute']]],
+  ['getvaluebool_11',['getValueBool',['../classmyxmlpp_1_1Attribute.html#a369e0b8a66f48f2b7ffc5aa6c02d80b0',1,'myxmlpp::Attribute']]],
+  ['getvaluefile_12',['getValueFile',['../classmyxmlpp_1_1Attribute.html#a1516a9d314476364d76326211c37043a',1,'myxmlpp::Attribute']]],
+  ['getvaluefloat_13',['getValueFloat',['../classmyxmlpp_1_1Attribute.html#ad2d726c1266f6345985c13fd79da3df1',1,'myxmlpp::Attribute']]],
+  ['getvalueint_14',['getValueInt',['../classmyxmlpp_1_1Attribute.html#a0596730263a274eb904ae28ffc5a0d68',1,'myxmlpp::Attribute']]],
+  ['getvaluexmldoc_15',['getValueXmlDoc',['../classmyxmlpp_1_1Attribute.html#afcb0ec6559249bab694c805726cc9994',1,'myxmlpp::Attribute']]]
 ];

@@ -25,51 +25,6 @@
 var NAVTREE =
 [
   [ "myxmlpp", "index.html", [
-    [ "Customization", "md_doxygen_awesome_css_docs_customization.html", [
-      [ "CSS-Variables", "md_doxygen_awesome_css_docs_customization.html#autotoc_md1", [
-        [ "Setup", "md_doxygen_awesome_css_docs_customization.html#autotoc_md2", null ],
-        [ "Available variables", "md_doxygen_awesome_css_docs_customization.html#autotoc_md3", null ]
-      ] ],
-      [ "Doxygen generator", "md_doxygen_awesome_css_docs_customization.html#autotoc_md4", null ],
-      [ "Share your customizations", "md_doxygen_awesome_css_docs_customization.html#autotoc_md5", null ]
-    ] ],
-    [ "Extensions", "md_doxygen_awesome_css_docs_extensions.html", [
-      [ "Dark Mode Toggle", "md_doxygen_awesome_css_docs_extensions.html#autotoc_md7", [
-        [ "Installation", "md_doxygen_awesome_css_docs_extensions.html#autotoc_md8", null ],
-        [ "Customizing", "md_doxygen_awesome_css_docs_extensions.html#autotoc_md9", null ]
-      ] ],
-      [ "Fragment Copy Button", "md_doxygen_awesome_css_docs_extensions.html#autotoc_md10", [
-        [ "Installation", "md_doxygen_awesome_css_docs_extensions.html#autotoc_md11", null ],
-        [ "Customizing", "md_doxygen_awesome_css_docs_extensions.html#autotoc_md12", null ]
-      ] ],
-      [ "Paragraph Linking", "md_doxygen_awesome_css_docs_extensions.html#autotoc_md13", [
-        [ "Installation", "md_doxygen_awesome_css_docs_extensions.html#autotoc_md14", null ],
-        [ "Customizing", "md_doxygen_awesome_css_docs_extensions.html#autotoc_md15", null ]
-      ] ],
-      [ "Interactive TOC", "md_doxygen_awesome_css_docs_extensions.html#autotoc_md16", [
-        [ "Installation", "md_doxygen_awesome_css_docs_extensions.html#autotoc_md17", null ],
-        [ "Customizing", "md_doxygen_awesome_css_docs_extensions.html#autotoc_md18", null ]
-      ] ]
-    ] ],
-    [ "Tips & Tricks", "md_doxygen_awesome_css_docs_tricks.html", [
-      [ "Diagrams with Graphviz", "md_doxygen_awesome_css_docs_tricks.html#autotoc_md20", null ],
-      [ "Disable Dark Mode", "md_doxygen_awesome_css_docs_tricks.html#autotoc_md21", null ],
-      [ "Choosing Sidebar Width", "md_doxygen_awesome_css_docs_tricks.html#autotoc_md22", null ]
-    ] ],
-    [ "Doxygen Awesome", "md_doxygen_awesome_css_README.html", [
-      [ "Motivation", "md_doxygen_awesome_css_README.html#autotoc_md24", null ],
-      [ "Features", "md_doxygen_awesome_css_README.html#autotoc_md25", null ],
-      [ "Examples", "md_doxygen_awesome_css_README.html#autotoc_md26", null ],
-      [ "Installation", "md_doxygen_awesome_css_README.html#autotoc_md27", [
-        [ "Choosing a layout", "md_doxygen_awesome_css_README.html#autotoc_md28", [
-          [ "Base Theme (1)", "md_doxygen_awesome_css_README.html#autotoc_md29", null ],
-          [ "Sidebar-Only Theme (2)", "md_doxygen_awesome_css_README.html#autotoc_md30", null ]
-        ] ],
-        [ "Further installation instructions:", "md_doxygen_awesome_css_README.html#autotoc_md31", null ]
-      ] ],
-      [ "Browser support", "md_doxygen_awesome_css_README.html#autotoc_md32", null ],
-      [ "Credits", "md_doxygen_awesome_css_README.html#autotoc_md33", null ]
-    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],

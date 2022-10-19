@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['illegalvalueexception_0',['IllegalValueException',['../classmyxmlpp_1_1IllegalValueException.html',1,'myxmlpp']]]
+  ['move_0',['move',['../classmyxmlpp_1_1Node.html#a17a5a5c88094e882c4585045a707a877',1,'myxmlpp::Node']]]
 ];

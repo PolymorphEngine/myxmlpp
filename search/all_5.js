@@ -1,6 +1,13 @@
 var searchData=
 [
-  ['empty_0',['empty',['../classmyxmlpp_1_1Node.html#aa5a6719d8748b1dec09abfec868c16e5',1,'myxmlpp::Node']]],
-  ['exception_1',['Exception',['../classmyxmlpp_1_1Exception.html',1,'myxmlpp']]],
-  ['extensions_2',['Extensions',['../md_doxygen_awesome_css_docs_extensions.html',1,'']]]
+  ['fileexception_0',['FileException',['../classmyxmlpp_1_1FileException.html',1,'myxmlpp']]],
+  ['findattribute_1',['findAttribute',['../classmyxmlpp_1_1Node.html#a0508f9c1e69f2ca5d825fa9fa5617998',1,'myxmlpp::Node']]],
+  ['findchild_2',['findChild',['../classmyxmlpp_1_1Node.html#a28c5e861aef5209c10ce5ff0f6adada2',1,'myxmlpp::Node']]],
+  ['findchildbypath_3',['findChildByPath',['../classmyxmlpp_1_1Node.html#a275894898256342a340a2803e387e11e',1,'myxmlpp::Node']]],
+  ['findchildbyspath_4',['findChildBySPath',['../classmyxmlpp_1_1Node.html#a4b4c2ba89a08a7d0f15c473c66dd5ceb',1,'myxmlpp::Node']]],
+  ['findchildr_5',['findChildR',['../classmyxmlpp_1_1Node.html#a4b0f9a0e16b5f313eb9d73567ae585c2',1,'myxmlpp::Node']]],
+  ['findchildren_6',['findChildren',['../classmyxmlpp_1_1Node.html#a3743d883af0c6f5b93af05969940f501',1,'myxmlpp::Node::findChildren(const std::string &amp;tag) const'],['../classmyxmlpp_1_1Node.html#a161399b23bddde0d3676ffc7a3be3193',1,'myxmlpp::Node::findChildren(const std::string &amp;tag, std::vector&lt; std::shared_ptr&lt; Node &gt; &gt; *children) const']]],
+  ['findchildrenbypath_7',['findChildrenByPath',['../classmyxmlpp_1_1Node.html#ab7d73eab0db311bff37b2c6429c7f6e4',1,'myxmlpp::Node']]],
+  ['findchildrenbyspath_8',['findChildrenBySPath',['../classmyxmlpp_1_1Node.html#a11f24ad6fa4ad92acc8ac0ad51adda9e',1,'myxmlpp::Node']]],
+  ['findchildrenr_9',['findChildrenR',['../classmyxmlpp_1_1Node.html#abe583a4e2f91aeb45c334f92d7f2ec99',1,'myxmlpp::Node']]]
 ];
