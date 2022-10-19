@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['test_0',['test',['../classMyLibrary_1_1Example.html#a1c0046b0674eb4cad09c5d3e943912b8',1,'MyLibrary::Example']]],
-  ['tips_20_26_20tricks_1',['Tips &amp; Tricks',['../md_doxygen_awesome_css_docs_tricks.html',1,'']]],
-  ['todo_20list_2',['Todo List',['../todo.html',1,'']]]
+  ['what_0',['what',['../classmyxmlpp_1_1Exception.html#ae35e3c375b66d4219c4bd6d99711b933',1,'myxmlpp::Exception']]],
+  ['write_1',['write',['../classmyxmlpp_1_1Doc.html#a494d12c5a27f3def4f35ed1c3d3352ef',1,'myxmlpp::Doc']]],
+  ['writef_2',['writeF',['../classmyxmlpp_1_1Doc.html#a69125ece74dbab331f38c2c888a91215',1,'myxmlpp::Doc']]]
 ];

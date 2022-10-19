@@ -1,12 +1,13 @@
 var searchData=
 [
-  ['rmattribute_0',['rmAttribute',['../classmyxmlpp_1_1Node.html#a928a6df1f9bd2f2f9954d2aa73f62d75',1,'myxmlpp::Node']]],
-  ['rmchild_1',['rmChild',['../classmyxmlpp_1_1Node.html#a17506c8a98c81e92dd3cc1ffdab19519',1,'myxmlpp::Node']]],
-  ['rmchildbypath_2',['rmChildByPath',['../classmyxmlpp_1_1Node.html#aa130a25d681119aca2470230c829f9e2',1,'myxmlpp::Node']]],
-  ['rmchildbyspath_3',['rmChildBySPath',['../classmyxmlpp_1_1Node.html#af0964856365befbee162c3139e37b914',1,'myxmlpp::Node']]],
-  ['rmchildr_4',['rmChildR',['../classmyxmlpp_1_1Node.html#abd13d858eac4a45430d60cc086f376f2',1,'myxmlpp::Node']]],
-  ['rmchildren_5',['rmChildren',['../classmyxmlpp_1_1Node.html#a2a944147ffa71ab1f214a70a07e7b49d',1,'myxmlpp::Node']]],
-  ['rmchildrenbypath_6',['rmChildrenByPath',['../classmyxmlpp_1_1Node.html#aa80bb7920a43148a182b549e23459e71',1,'myxmlpp::Node']]],
-  ['rmchildrenbyspath_7',['rmChildrenBySPath',['../classmyxmlpp_1_1Node.html#acca67a73f5a2b1e1df331ac5d2c6c3f5',1,'myxmlpp::Node']]],
-  ['rmchildrenr_8',['rmChildrenR',['../classmyxmlpp_1_1Node.html#a3cf9eb8e0aaf10cf906d25ce8b0cf29f',1,'myxmlpp::Node']]]
+  ['setdata_0',['setData',['../classmyxmlpp_1_1Node.html#a27601972f9f70cb756b710ed969a1c53',1,'myxmlpp::Node']]],
+  ['setfilepath_1',['setFilepath',['../classmyxmlpp_1_1Doc.html#a09337112a19504390181bc5d4666d669',1,'myxmlpp::Doc']]],
+  ['setkey_2',['setKey',['../classmyxmlpp_1_1Attribute.html#a2cfcfffec634199a367e9fb5b4ef220f',1,'myxmlpp::Attribute']]],
+  ['setparent_3',['setParent',['../classmyxmlpp_1_1Node.html#a4403f1c150ab6b4f51f085a27c7d0de8',1,'myxmlpp::Node']]],
+  ['setroot_4',['setRoot',['../classmyxmlpp_1_1Doc.html#a4e7151c5de3a4927fe6bc6f3992b7851',1,'myxmlpp::Doc']]],
+  ['settag_5',['setTag',['../classmyxmlpp_1_1Node.html#aef463859ec3f44c0ecab31572b1f69e1',1,'myxmlpp::Node']]],
+  ['setvalue_6',['setValue',['../classmyxmlpp_1_1Attribute.html#aebf83c4193d5b880b14c6c9d41bea51e',1,'myxmlpp::Attribute']]],
+  ['setvaluebool_7',['setValueBool',['../classmyxmlpp_1_1Attribute.html#a24da61f80ceb28e3e8776623818ee873',1,'myxmlpp::Attribute']]],
+  ['setvaluefloat_8',['setValueFloat',['../classmyxmlpp_1_1Attribute.html#aaba5f5ba494431b4cab461a244839167',1,'myxmlpp::Attribute']]],
+  ['setvalueint_9',['setValueInt',['../classmyxmlpp_1_1Attribute.html#a35ff0c00d73bbbcf71a568c3aa036d10',1,'myxmlpp::Attribute']]]
 ];

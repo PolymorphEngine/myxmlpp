@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['customization_0',['Customization',['../md_doxygen_awesome_css_docs_customization.html',1,'']]]
+  ['doxygen_20awesome_0',['Doxygen Awesome',['../md_doxygen_awesome_css_README.html',1,'']]]
 ];

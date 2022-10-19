@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bug_20list_0',['Bug List',['../bug.html',1,'']]]
+  ['customization_0',['Customization',['../md_doxygen_awesome_css_docs_customization.html',1,'']]]
 ];

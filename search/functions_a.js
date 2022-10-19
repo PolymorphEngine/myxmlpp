@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['popattribute_0',['popAttribute',['../classmyxmlpp_1_1Node.html#a2ba34ea2c8ffd69660d4b90571edba81',1,'myxmlpp::Node']]],
-  ['popchild_1',['popChild',['../classmyxmlpp_1_1Node.html#adc43f972b23f1eef0b365fd452830aa3',1,'myxmlpp::Node']]],
-  ['popchildbypath_2',['popChildByPath',['../classmyxmlpp_1_1Node.html#a64296437518fc760d6cf3b44d2fb8e55',1,'myxmlpp::Node']]],
-  ['popchildbyspath_3',['popChildBySPath',['../classmyxmlpp_1_1Node.html#a05a4954e8139d3967d7dd058baa8dbed',1,'myxmlpp::Node']]],
-  ['popchildr_4',['popChildR',['../classmyxmlpp_1_1Node.html#aed350ba2ba70bef007b2c323b18ca065',1,'myxmlpp::Node']]],
-  ['popchildren_5',['popChildren',['../classmyxmlpp_1_1Node.html#ae8aeca5ac78f4dc73e781898ae43e066',1,'myxmlpp::Node']]],
-  ['popchildrenbypath_6',['popChildrenByPath',['../classmyxmlpp_1_1Node.html#a5c4a2330600c020155541b4d1d973977',1,'myxmlpp::Node']]],
-  ['popchildrenbyspath_7',['popChildrenBySPath',['../classmyxmlpp_1_1Node.html#aeff3668a11a7307b8ed158dd94e3fa75',1,'myxmlpp::Node']]],
-  ['popchildrenr_8',['popChildrenR',['../classmyxmlpp_1_1Node.html#a4e1ea310d3b9bbe7b71f99fb3d8400c7',1,'myxmlpp::Node']]]
+  ['rmattribute_0',['rmAttribute',['../classmyxmlpp_1_1Node.html#a928a6df1f9bd2f2f9954d2aa73f62d75',1,'myxmlpp::Node']]],
+  ['rmchild_1',['rmChild',['../classmyxmlpp_1_1Node.html#a17506c8a98c81e92dd3cc1ffdab19519',1,'myxmlpp::Node']]],
+  ['rmchildbypath_2',['rmChildByPath',['../classmyxmlpp_1_1Node.html#aa130a25d681119aca2470230c829f9e2',1,'myxmlpp::Node']]],
+  ['rmchildbyspath_3',['rmChildBySPath',['../classmyxmlpp_1_1Node.html#af0964856365befbee162c3139e37b914',1,'myxmlpp::Node']]],
+  ['rmchildr_4',['rmChildR',['../classmyxmlpp_1_1Node.html#abd13d858eac4a45430d60cc086f376f2',1,'myxmlpp::Node']]],
+  ['rmchildren_5',['rmChildren',['../classmyxmlpp_1_1Node.html#a2a944147ffa71ab1f214a70a07e7b49d',1,'myxmlpp::Node']]],
+  ['rmchildrenbypath_6',['rmChildrenByPath',['../classmyxmlpp_1_1Node.html#aa80bb7920a43148a182b549e23459e71',1,'myxmlpp::Node']]],
+  ['rmchildrenbyspath_7',['rmChildrenBySPath',['../classmyxmlpp_1_1Node.html#acca67a73f5a2b1e1df331ac5d2c6c3f5',1,'myxmlpp::Node']]],
+  ['rmchildrenr_8',['rmChildrenR',['../classmyxmlpp_1_1Node.html#a3cf9eb8e0aaf10cf906d25ce8b0cf29f',1,'myxmlpp::Node']]]
 ];

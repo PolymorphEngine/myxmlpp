@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['long_5ffunction_5fwith_5fmany_5fparameters_0',['long_function_with_many_parameters',['../classMyLibrary_1_1SubclassExample.html#a92227fff4f72a11be0e21d88914ba63e',1,'MyLibrary::SubclassExample']]]
+  ['move_0',['move',['../classmyxmlpp_1_1Node.html#a17a5a5c88094e882c4585045a707a877',1,'myxmlpp::Node']]]
 ];

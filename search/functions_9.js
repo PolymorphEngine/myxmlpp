@@ -1,5 +1,12 @@
 var searchData=
 [
-  ['noattributes_0',['noAttributes',['../classmyxmlpp_1_1Node.html#af6455a19a6feaa6fc9d42d63b81fd0c0',1,'myxmlpp::Node']]],
-  ['node_1',['Node',['../classmyxmlpp_1_1Node.html#a39d20be91d531273f6d66a5b6cff0cf8',1,'myxmlpp::Node::Node(Node *parent, std::string &amp;str, std::string &amp;remaining)'],['../classmyxmlpp_1_1Node.html#a88767e53f5ae9ffa2b1045768342f0de',1,'myxmlpp::Node::Node(Node *parent) noexcept'],['../classmyxmlpp_1_1Node.html#a19cac8aeeca899c3111b61a89a2c73e6',1,'myxmlpp::Node::Node(Node *parent, std::string tag, std::vector&lt; std::shared_ptr&lt; Node &gt; &gt; children) noexcept'],['../classmyxmlpp_1_1Node.html#a8a1658a01fc9eb597a4333177eeec440',1,'myxmlpp::Node::Node(Node *parent, std::string tag, std::vector&lt; std::shared_ptr&lt; Attribute &gt; &gt; attributes, std::vector&lt; std::shared_ptr&lt; Node &gt; &gt; children={}) noexcept'],['../classmyxmlpp_1_1Node.html#a9eb6a8268e2f2c2c5c9fab99eef16e9c',1,'myxmlpp::Node::Node(Node *parent, std::string &amp;str)']]]
+  ['popattribute_0',['popAttribute',['../classmyxmlpp_1_1Node.html#a2ba34ea2c8ffd69660d4b90571edba81',1,'myxmlpp::Node']]],
+  ['popchild_1',['popChild',['../classmyxmlpp_1_1Node.html#adc43f972b23f1eef0b365fd452830aa3',1,'myxmlpp::Node']]],
+  ['popchildbypath_2',['popChildByPath',['../classmyxmlpp_1_1Node.html#a64296437518fc760d6cf3b44d2fb8e55',1,'myxmlpp::Node']]],
+  ['popchildbyspath_3',['popChildBySPath',['../classmyxmlpp_1_1Node.html#a05a4954e8139d3967d7dd058baa8dbed',1,'myxmlpp::Node']]],
+  ['popchildr_4',['popChildR',['../classmyxmlpp_1_1Node.html#aed350ba2ba70bef007b2c323b18ca065',1,'myxmlpp::Node']]],
+  ['popchildren_5',['popChildren',['../classmyxmlpp_1_1Node.html#ae8aeca5ac78f4dc73e781898ae43e066',1,'myxmlpp::Node']]],
+  ['popchildrenbypath_6',['popChildrenByPath',['../classmyxmlpp_1_1Node.html#a5c4a2330600c020155541b4d1d973977',1,'myxmlpp::Node']]],
+  ['popchildrenbyspath_7',['popChildrenBySPath',['../classmyxmlpp_1_1Node.html#aeff3668a11a7307b8ed158dd94e3fa75',1,'myxmlpp::Node']]],
+  ['popchildrenr_8',['popChildrenR',['../classmyxmlpp_1_1Node.html#a4e1ea310d3b9bbe7b71f99fb3d8400c7',1,'myxmlpp::Node']]]
 ];

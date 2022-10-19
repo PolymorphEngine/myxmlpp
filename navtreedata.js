@@ -57,22 +57,19 @@ var NAVTREE =
       [ "Choosing Sidebar Width", "md_doxygen_awesome_css_docs_tricks.html#autotoc_md22", null ]
     ] ],
     [ "Doxygen Awesome", "md_doxygen_awesome_css_README.html", [
-      [ "Motivation", "md_doxygen_awesome_css_README.html#autotoc_md30", null ],
-      [ "Features", "md_doxygen_awesome_css_README.html#autotoc_md31", null ],
-      [ "Examples", "md_doxygen_awesome_css_README.html#autotoc_md32", null ],
-      [ "Installation", "md_doxygen_awesome_css_README.html#autotoc_md33", [
-        [ "Choosing a layout", "md_doxygen_awesome_css_README.html#autotoc_md34", [
-          [ "Base Theme (1)", "md_doxygen_awesome_css_README.html#autotoc_md35", null ],
-          [ "Sidebar-Only Theme (2)", "md_doxygen_awesome_css_README.html#autotoc_md36", null ]
+      [ "Motivation", "md_doxygen_awesome_css_README.html#autotoc_md24", null ],
+      [ "Features", "md_doxygen_awesome_css_README.html#autotoc_md25", null ],
+      [ "Examples", "md_doxygen_awesome_css_README.html#autotoc_md26", null ],
+      [ "Installation", "md_doxygen_awesome_css_README.html#autotoc_md27", [
+        [ "Choosing a layout", "md_doxygen_awesome_css_README.html#autotoc_md28", [
+          [ "Base Theme (1)", "md_doxygen_awesome_css_README.html#autotoc_md29", null ],
+          [ "Sidebar-Only Theme (2)", "md_doxygen_awesome_css_README.html#autotoc_md30", null ]
         ] ],
-        [ "Further installation instructions:", "md_doxygen_awesome_css_README.html#autotoc_md37", null ]
+        [ "Further installation instructions:", "md_doxygen_awesome_css_README.html#autotoc_md31", null ]
       ] ],
-      [ "Browser support", "md_doxygen_awesome_css_README.html#autotoc_md38", null ],
-      [ "Credits", "md_doxygen_awesome_css_README.html#autotoc_md39", null ]
+      [ "Browser support", "md_doxygen_awesome_css_README.html#autotoc_md32", null ],
+      [ "Credits", "md_doxygen_awesome_css_README.html#autotoc_md33", null ]
     ] ],
-    [ "Bug List", "bug.html", null ],
-    [ "Deprecated List", "deprecated.html", null ],
-    [ "Todo List", "todo.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -91,8 +88,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"AttributeNotFoundException_8cpp_source.html",
-"test_8cpp_source.html"
+"AttributeNotFoundException_8cpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
