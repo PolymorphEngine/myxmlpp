@@ -111,13 +111,13 @@ $(document).ready(function(){initNavTree('src_2Node_2delete_2pop_2Node__popChild
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>std::vector&lt;std::shared_ptr&lt;myxmlpp::Node&gt;&gt;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classmyxmlpp_1_1Node.html#ae8aeca5ac78f4dc73e781898ae43e066">   24</a></span><a class="code hl_function" href="classmyxmlpp_1_1Node.html#ae8aeca5ac78f4dc73e781898ae43e066">myxmlpp::Node::popChildren</a>(<span class="keyword">const</span> std::string&amp; tag) <span class="keyword">noexcept</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    std::vector&lt;std::vector&lt;std::shared_ptr&lt;Node&gt;&gt;::iterator&gt; toPopList =</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            _findChildrenIt(tag);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    std::vector&lt;std::shared_ptr&lt;Node&gt;&gt; toPopNodes;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> it = toPopList.begin(); it != toPopList.end(); ++it) {</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        toPopNodes.push_back(**it);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        _children.erase(*it);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    std::vector&lt;std::shared_ptr&lt;Node&gt;&gt;::iterator toPop = _findChildIt(tag);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    std::vector&lt;std::shared_ptr&lt;Node&gt;&gt; toPopNodes;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordflow">while</span> (toPop != _children.end()) {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        toPopNodes.push_back(*toPop);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        _children.erase(toPop);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        toPop = _findChildIt(tag);</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    }</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">return</span> toPopNodes;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
