@@ -25,6 +25,12 @@
 var NAVTREE =
 [
   [ "myxmlpp", "index.html", [
+    [ "myxmlpp (myxml++)", "md_README.html", [
+      [ "Installation", "md_README.html#autotoc_md1", null ],
+      [ "Usage (reading)", "md_README.html#autotoc_md2", null ],
+      [ "Usage (writing)", "md_README.html#autotoc_md3", null ],
+      [ "Developper documentation", "md_README.html#autotoc_md4", null ]
+    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],

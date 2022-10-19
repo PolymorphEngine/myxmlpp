@@ -1,6 +1,7 @@
 var classmyxmlpp_1_1Doc =
 [
     [ "Doc", "classmyxmlpp_1_1Doc.html#ad3e33945172ec37613fab51f8aa3cb13", null ],
+    [ "Doc", "classmyxmlpp_1_1Doc.html#a3168eee304ff2d554089019b48d5990c", null ],
     [ "_readFile", "classmyxmlpp_1_1Doc.html#aca45c86207e6d4e7bbf8379e59a4ced4", null ],
     [ "_throwOpenError", "classmyxmlpp_1_1Doc.html#a39ed4e6e64979fd42f60db08ec2b495d", null ],
     [ "getFilepath", "classmyxmlpp_1_1Doc.html#acdd9370c72f3dc5f7813fc559bb4b063", null ],
