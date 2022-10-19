@@ -23,13 +23,15 @@ myxmlpp::Node::_findChildrenIt(const std::string &tag)
 std::vector<std::shared_ptr<myxmlpp::Node>>
 myxmlpp::Node::popChildren(const std::string& tag) noexcept
 {
-    std::vector<std::vector<std::shared_ptr<Node>>::iterator> toPopList =
-            _findChildrenIt(tag);
     std::vector<std::shared_ptr<Node>> toPopNodes;
 
-    for (auto it = toPopList.begin(); it != toPopList.end(); ++it) {
-        toPopNodes.push_back(**it);
-        _children.erase(*it);
-    }
+    try {
+        auto toPop = _findChildIt(tag);
+        while (toPop != _children.end()) {
+            toPopNodes.push_back(*toPop);
+            _children.erase(toPop);
+            toPop = _findChildIt(tag);
+        }
+    } catch (NodeNotFoundException& e) {}
     return toPopNodes;
 }
