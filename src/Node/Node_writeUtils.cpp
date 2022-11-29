@@ -17,15 +17,9 @@ std::string myxmlpp::Node::_strIndent(std::size_t indent) {
 
 std::string myxmlpp::Node::_dumpAttrs() const noexcept {
     std::string format;
-    bool firstAttr = true;
 
-    for (auto &a : _attributes) {
-        if (firstAttr) {
-            format += ' ';
-            firstAttr = false;
-        }
-        format += a->asString();
-    }
+    for (auto &a : _attributes)
+        format += ' ' + a->asString();
     return format;
 }
 
