@@ -444,6 +444,11 @@ namespace myxmlpp {
                                 char delimiter='/') noexcept;
 
             /**
+             * Method to remove all children of the node
+             */
+            void rmChildren() noexcept;
+
+            /**
              * Method to remove all children which have the provided tag
              * @param tag tag of the nodes to remove
              */
@@ -520,6 +525,13 @@ namespace myxmlpp {
             */
             std::shared_ptr<Node> popChildBySPath(const std::string& path,
                                                   char delimiter='/') noexcept;
+
+            /**
+             * Method to pop all children of the node
+             * @return a list of the popped nodes or an empty list
+             * if no node is found
+             */
+            std::vector<std::shared_ptr<Node>> popChildren() noexcept;
 
             /**
              * Method to pop all children which have the provided tag
