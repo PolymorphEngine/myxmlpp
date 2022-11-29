@@ -27,11 +27,13 @@ bool myxmlpp::Node::_isEndOfNode(std::string &str)
 void myxmlpp::Node::_checkEndOfNode(std::string &str,
                                     std::string &remaining)
 {
-    std::string rgx("[\r\n\t\f\v ]*</(.*)>");
+    std::string rgx("[\r\n\t\f\v ]*</([^>]*)>");
     std::smatch matches;
 
-    if (!_performRegex(matches, rgx, str, &remaining) || matches[1].str() != _tag)
+    if (!_performRegex(matches, rgx, str, &remaining))
         throw ParsingException(str, MYXMLPP_ERROR_LOCATION, "no tag end found");
+    else if (matches[1].str() != _tag)
+        throw ParsingException(str, MYXMLPP_ERROR_LOCATION, "tag end doesn't match tag start");
     else
         str = matches.suffix().str();
 }
@@ -57,7 +59,7 @@ bool myxmlpp::Node::_performRegex(std::smatch &matches, std::string &regexStr,
 void myxmlpp::Node::_parseNodeString(std::string &str, std::string &remaining)
 {
     std::string rgx("[\r\n\t\f\v ]*(<([a-zA-Z0-9_\\-]*)"
-                    "(?:[\r\n\t\f\v ](.*\")[\r\n\t\f\v ]*?)*"
+                    "((?:[\r\n\t\f\v ](?:[^=]+)=\"(?:[^\"]*)\"[\r\n\t\f\v ]*?)*)"
                     "[\\r\\n\\t\\f\\v ]*(/?)>)");
     std::smatch matches;
 
@@ -68,13 +70,14 @@ void myxmlpp::Node::_parseNodeString(std::string &str, std::string &remaining)
         std::string attributes = matches[3].str();
         _extractAttributes(attributes);
     }
-    str = matches.suffix().str();
     if (!matches[4].length()) {
+        str = matches.suffix().str();
         while (!_isEndOfNode(str)) {
             addChild(std::shared_ptr<Node>(new Node(this, str, remaining)));
         }
         _checkEndOfNode(str, remaining);
-    }
+    } else
+        str = matches.suffix().str();
 }
 
 void myxmlpp::Node::_extractAttributes(std::string &str) noexcept
