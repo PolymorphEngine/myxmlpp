@@ -50,3 +50,11 @@ TEST(Node_popChildren, many_found)
         SUCCEED();
     }
 }
+
+TEST(Node_popChildren, all)
+{
+    myxmlpp::Doc d("tests/files/unit-testing/findChildren.xml");
+
+    auto children = d.getRoot()->popChildren();
+    EXPECT_TRUE(d.getRoot()->begin() == d.getRoot()->end());
+}
