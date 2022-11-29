@@ -105,77 +105,71 @@ $(document).ready(function(){initNavTree('Node__writeUtils_8cpp_source.html','')
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classmyxmlpp_1_1Node.html#a6fd903492ce38eb67950ec9c70905e1c">   18</a></span>std::string <a class="code hl_function" href="classmyxmlpp_1_1Node.html#a6fd903492ce38eb67950ec9c70905e1c">myxmlpp::Node::_dumpAttrs</a>() const noexcept {</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    std::string format;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">bool</span> firstAttr = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;a : _attributes) {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keywordflow">if</span> (firstAttr) {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            format += <span class="charliteral">&#39; &#39;</span>;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            firstAttr = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        }</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        format += a-&gt;asString();</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    }</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordflow">return</span> format;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classmyxmlpp_1_1Node.html#a1104c8b4cc75b4134d696c9829a3b53a">   33</a></span>std::string <a class="code hl_function" href="classmyxmlpp_1_1Node.html#a1104c8b4cc75b4134d696c9829a3b53a">myxmlpp::Node::_dumpAttrsF</a>() const noexcept {</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    std::string format;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;a : _attributes) {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        format += <span class="charliteral">&#39; &#39;</span>;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        format += a-&gt;asString();</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">return</span> format;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classmyxmlpp_1_1Node.html#aa9ec4e50c99b3a9f7004709b66b4c0d3">   45</a></span>std::string <a class="code hl_function" href="classmyxmlpp_1_1Node.html#aa9ec4e50c99b3a9f7004709b66b4c0d3">myxmlpp::Node::asString</a>(<span class="keywordtype">bool</span> includeChildren) <span class="keyword">const</span> <span class="keyword">noexcept</span> {</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    std::string str(<span class="stringliteral">&quot;&lt;&quot;</span>);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    str += _tag;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    str += _dumpAttrs();</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordflow">if</span> (!includeChildren) {</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        str += <span class="stringliteral">&quot;/&gt;&quot;</span>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">return</span> str;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">if</span> (!empty()) {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        str += <span class="stringliteral">&quot;&gt;&quot;</span>;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;c : _children)</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>            str += c-&gt;asString();</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        str += std::string(<span class="stringliteral">&quot;&lt;/&quot;</span>) + _tag + <span class="stringliteral">&quot;&gt;&quot;</span>;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    } <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        str += <span class="stringliteral">&quot;/&gt;&quot;</span>;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">return</span> str;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>std::string</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classmyxmlpp_1_1Node.html#af717258274c9d596acad21e36db3edab">   65</a></span><a class="code hl_function" href="classmyxmlpp_1_1Node.html#af717258274c9d596acad21e36db3edab">myxmlpp::Node::asFString</a>(<span class="keywordtype">size_t</span> indent, <span class="keywordtype">bool</span> includeChildren) <span class="keyword">const</span> <span class="keyword">noexcept</span> {</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    std::string str = includeChildren ? _strIndent(indent) + <span class="stringliteral">&quot;&lt;&quot;</span> : <span class="stringliteral">&quot;&lt;&quot;</span>;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    str += _tag;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    str += _dumpAttrsF();</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">if</span> (!includeChildren) {</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        str += <span class="stringliteral">&quot;/&gt;\n&quot;</span>;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">return</span> str;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordflow">if</span> (!empty()) {</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        str += <span class="stringliteral">&quot;&gt;\n&quot;</span>;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;c : _children)</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            str += c-&gt;asFString(indent + 1);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        str += _strIndent(indent)</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>               + std::string(<span class="stringliteral">&quot;&lt;/&quot;</span>)</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>               + _tag</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>               + (_parent ? <span class="stringliteral">&quot;&gt;\n&quot;</span> : <span class="stringliteral">&quot;&gt;&quot;</span>);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    } <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        str += _parent ? <span class="stringliteral">&quot;/&gt;\n&quot;</span> : <span class="stringliteral">&quot;/&gt;&quot;</span>;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keywordflow">return</span> str;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>}</div>
-<div class="ttc" id="aclassmyxmlpp_1_1Node_html_a1104c8b4cc75b4134d696c9829a3b53a"><div class="ttname"><a href="classmyxmlpp_1_1Node.html#a1104c8b4cc75b4134d696c9829a3b53a">myxmlpp::Node::_dumpAttrsF</a></div><div class="ttdeci">std::string _dumpAttrsF() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="Node__writeUtils_8cpp_source.html#l00033">Node_writeUtils.cpp:33</a></div></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;a : _attributes)</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        format += <span class="charliteral">&#39; &#39;</span> + a-&gt;asString();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">return</span> format;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classmyxmlpp_1_1Node.html#a1104c8b4cc75b4134d696c9829a3b53a">   27</a></span>std::string <a class="code hl_function" href="classmyxmlpp_1_1Node.html#a1104c8b4cc75b4134d696c9829a3b53a">myxmlpp::Node::_dumpAttrsF</a>() const noexcept {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    std::string format;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;a : _attributes) {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        format += <span class="charliteral">&#39; &#39;</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        format += a-&gt;asString();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">return</span> format;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classmyxmlpp_1_1Node.html#aa9ec4e50c99b3a9f7004709b66b4c0d3">   39</a></span>std::string <a class="code hl_function" href="classmyxmlpp_1_1Node.html#aa9ec4e50c99b3a9f7004709b66b4c0d3">myxmlpp::Node::asString</a>(<span class="keywordtype">bool</span> includeChildren) <span class="keyword">const</span> <span class="keyword">noexcept</span> {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    std::string str(<span class="stringliteral">&quot;&lt;&quot;</span>);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    str += _tag;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    str += _dumpAttrs();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">if</span> (!includeChildren) {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        str += <span class="stringliteral">&quot;/&gt;&quot;</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordflow">return</span> str;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordflow">if</span> (!empty()) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        str += <span class="stringliteral">&quot;&gt;&quot;</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;c : _children)</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            str += c-&gt;asString();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        str += std::string(<span class="stringliteral">&quot;&lt;/&quot;</span>) + _tag + <span class="stringliteral">&quot;&gt;&quot;</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    } <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        str += <span class="stringliteral">&quot;/&gt;&quot;</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordflow">return</span> str;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>std::string</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classmyxmlpp_1_1Node.html#af717258274c9d596acad21e36db3edab">   59</a></span><a class="code hl_function" href="classmyxmlpp_1_1Node.html#af717258274c9d596acad21e36db3edab">myxmlpp::Node::asFString</a>(<span class="keywordtype">size_t</span> indent, <span class="keywordtype">bool</span> includeChildren) <span class="keyword">const</span> <span class="keyword">noexcept</span> {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    std::string str = includeChildren ? _strIndent(indent) + <span class="stringliteral">&quot;&lt;&quot;</span> : <span class="stringliteral">&quot;&lt;&quot;</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    str += _tag;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    str += _dumpAttrsF();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">if</span> (!includeChildren) {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        str += <span class="stringliteral">&quot;/&gt;\n&quot;</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keywordflow">return</span> str;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    }</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordflow">if</span> (!empty()) {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        str += <span class="stringliteral">&quot;&gt;\n&quot;</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;c : _children)</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            str += c-&gt;asFString(indent + 1);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        str += _strIndent(indent)</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>               + std::string(<span class="stringliteral">&quot;&lt;/&quot;</span>)</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>               + _tag</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>               + (_parent ? <span class="stringliteral">&quot;&gt;\n&quot;</span> : <span class="stringliteral">&quot;&gt;&quot;</span>);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    } <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        str += _parent ? <span class="stringliteral">&quot;/&gt;\n&quot;</span> : <span class="stringliteral">&quot;/&gt;&quot;</span>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordflow">return</span> str;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}</div>
+<div class="ttc" id="aclassmyxmlpp_1_1Node_html_a1104c8b4cc75b4134d696c9829a3b53a"><div class="ttname"><a href="classmyxmlpp_1_1Node.html#a1104c8b4cc75b4134d696c9829a3b53a">myxmlpp::Node::_dumpAttrsF</a></div><div class="ttdeci">std::string _dumpAttrsF() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="Node__writeUtils_8cpp_source.html#l00027">Node_writeUtils.cpp:27</a></div></div>
 <div class="ttc" id="aclassmyxmlpp_1_1Node_html_a6fd903492ce38eb67950ec9c70905e1c"><div class="ttname"><a href="classmyxmlpp_1_1Node.html#a6fd903492ce38eb67950ec9c70905e1c">myxmlpp::Node::_dumpAttrs</a></div><div class="ttdeci">std::string _dumpAttrs() const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="Node__writeUtils_8cpp_source.html#l00018">Node_writeUtils.cpp:18</a></div></div>
-<div class="ttc" id="aclassmyxmlpp_1_1Node_html_aa9ec4e50c99b3a9f7004709b66b4c0d3"><div class="ttname"><a href="classmyxmlpp_1_1Node.html#aa9ec4e50c99b3a9f7004709b66b4c0d3">myxmlpp::Node::asString</a></div><div class="ttdeci">std::string asString(bool includeChildren=true) const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="Node__writeUtils_8cpp_source.html#l00045">Node_writeUtils.cpp:45</a></div></div>
+<div class="ttc" id="aclassmyxmlpp_1_1Node_html_aa9ec4e50c99b3a9f7004709b66b4c0d3"><div class="ttname"><a href="classmyxmlpp_1_1Node.html#aa9ec4e50c99b3a9f7004709b66b4c0d3">myxmlpp::Node::asString</a></div><div class="ttdeci">std::string asString(bool includeChildren=true) const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="Node__writeUtils_8cpp_source.html#l00039">Node_writeUtils.cpp:39</a></div></div>
 <div class="ttc" id="aclassmyxmlpp_1_1Node_html_aaf5cd7a97f11472cb035ef12829b748b"><div class="ttname"><a href="classmyxmlpp_1_1Node.html#aaf5cd7a97f11472cb035ef12829b748b">myxmlpp::Node::_strIndent</a></div><div class="ttdeci">static std::string _strIndent(std::size_t indent)</div><div class="ttdef"><b>Definition:</b> <a href="Node__writeUtils_8cpp_source.html#l00010">Node_writeUtils.cpp:10</a></div></div>
-<div class="ttc" id="aclassmyxmlpp_1_1Node_html_af717258274c9d596acad21e36db3edab"><div class="ttname"><a href="classmyxmlpp_1_1Node.html#af717258274c9d596acad21e36db3edab">myxmlpp::Node::asFString</a></div><div class="ttdeci">std::string asFString(size_t indent, bool includeChildren=true) const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="Node__writeUtils_8cpp_source.html#l00065">Node_writeUtils.cpp:65</a></div></div>
+<div class="ttc" id="aclassmyxmlpp_1_1Node_html_af717258274c9d596acad21e36db3edab"><div class="ttname"><a href="classmyxmlpp_1_1Node.html#af717258274c9d596acad21e36db3edab">myxmlpp::Node::asFString</a></div><div class="ttdeci">std::string asFString(size_t indent, bool includeChildren=true) const noexcept</div><div class="ttdef"><b>Definition:</b> <a href="Node__writeUtils_8cpp_source.html#l00059">Node_writeUtils.cpp:59</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
