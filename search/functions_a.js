@@ -5,7 +5,7 @@ var searchData=
   ['rmchildbypath_2',['rmChildByPath',['../classmyxmlpp_1_1Node.html#aa130a25d681119aca2470230c829f9e2',1,'myxmlpp::Node']]],
   ['rmchildbyspath_3',['rmChildBySPath',['../classmyxmlpp_1_1Node.html#af0964856365befbee162c3139e37b914',1,'myxmlpp::Node']]],
   ['rmchildr_4',['rmChildR',['../classmyxmlpp_1_1Node.html#abd13d858eac4a45430d60cc086f376f2',1,'myxmlpp::Node']]],
-  ['rmchildren_5',['rmChildren',['../classmyxmlpp_1_1Node.html#a2a944147ffa71ab1f214a70a07e7b49d',1,'myxmlpp::Node']]],
+  ['rmchildren_5',['rmChildren',['../classmyxmlpp_1_1Node.html#a992818be24c59894044c2d43c2192a1b',1,'myxmlpp::Node::rmChildren() noexcept'],['../classmyxmlpp_1_1Node.html#a2a944147ffa71ab1f214a70a07e7b49d',1,'myxmlpp::Node::rmChildren(const std::string &amp;tag) noexcept']]],
   ['rmchildrenbypath_6',['rmChildrenByPath',['../classmyxmlpp_1_1Node.html#aa80bb7920a43148a182b549e23459e71',1,'myxmlpp::Node']]],
   ['rmchildrenbyspath_7',['rmChildrenBySPath',['../classmyxmlpp_1_1Node.html#acca67a73f5a2b1e1df331ac5d2c6c3f5',1,'myxmlpp::Node']]],
   ['rmchildrenr_8',['rmChildrenR',['../classmyxmlpp_1_1Node.html#a3cf9eb8e0aaf10cf906d25ce8b0cf29f',1,'myxmlpp::Node']]]

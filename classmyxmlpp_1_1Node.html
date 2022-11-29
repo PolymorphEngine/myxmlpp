@@ -175,6 +175,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa130a25d681119aca2470230c829f9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0964856365befbee162c3139e37b914"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmyxmlpp_1_1Node.html#af0964856365befbee162c3139e37b914">rmChildBySPath</a> (const std::string &amp;path, char delimiter='/') noexcept</td></tr>
 <tr class="separator:af0964856365befbee162c3139e37b914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a992818be24c59894044c2d43c2192a1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmyxmlpp_1_1Node.html#a992818be24c59894044c2d43c2192a1b">rmChildren</a> () noexcept</td></tr>
+<tr class="separator:a992818be24c59894044c2d43c2192a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a944147ffa71ab1f214a70a07e7b49d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmyxmlpp_1_1Node.html#a2a944147ffa71ab1f214a70a07e7b49d">rmChildren</a> (const std::string &amp;tag) noexcept</td></tr>
 <tr class="separator:a2a944147ffa71ab1f214a70a07e7b49d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cf9eb8e0aaf10cf906d25ce8b0cf29f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmyxmlpp_1_1Node.html#a3cf9eb8e0aaf10cf906d25ce8b0cf29f">rmChildrenR</a> (const std::string &amp;tag, int maxDepth=-1) noexcept</td></tr>
@@ -191,6 +193,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a64296437518fc760d6cf3b44d2fb8e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05a4954e8139d3967d7dd058baa8dbed"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classmyxmlpp_1_1Node.html">Node</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmyxmlpp_1_1Node.html#a05a4954e8139d3967d7dd058baa8dbed">popChildBySPath</a> (const std::string &amp;path, char delimiter='/') noexcept</td></tr>
 <tr class="separator:a05a4954e8139d3967d7dd058baa8dbed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a540ab0088c1fa76a8e1184e8a6a45c13"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classmyxmlpp_1_1Node.html">Node</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmyxmlpp_1_1Node.html#a540ab0088c1fa76a8e1184e8a6a45c13">popChildren</a> () noexcept</td></tr>
+<tr class="separator:a540ab0088c1fa76a8e1184e8a6a45c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8aeca5ac78f4dc73e781898ae43e066"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classmyxmlpp_1_1Node.html">Node</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmyxmlpp_1_1Node.html#ae8aeca5ac78f4dc73e781898ae43e066">popChildren</a> (const std::string &amp;tag) noexcept</td></tr>
 <tr class="separator:ae8aeca5ac78f4dc73e781898ae43e066"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e1ea310d3b9bbe7b71f99fb3d8400c7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classmyxmlpp_1_1Node.html">Node</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmyxmlpp_1_1Node.html#a4e1ea310d3b9bbe7b71f99fb3d8400c7">popChildrenR</a> (const std::string &amp;tag, int maxDepth=-1) noexcept</td></tr>
@@ -2427,8 +2431,36 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a540ab0088c1fa76a8e1184e8a6a45c13" name="a540ab0088c1fa76a8e1184e8a6a45c13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a540ab0088c1fa76a8e1184e8a6a45c13">&#9670;&nbsp;</a></span>popChildren() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::shared_ptr&lt; <a class="el" href="classmyxmlpp_1_1Node.html">myxmlpp::Node</a> &gt; &gt; myxmlpp::Node::popChildren </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Method to pop all children of the node </p><dl class="section return"><dt>Returns</dt><dd>a list of the popped nodes or an empty list if no node is found </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="src_2Node_2delete_2pop_2Node__popChildren_8cpp_source.html#l00039">39</a> of file <a class="el" href="src_2Node_2delete_2pop_2Node__popChildren_8cpp_source.html">Node_popChildren.cpp</a>.</p>
+
+</div>
+</div>
 <a id="ae8aeca5ac78f4dc73e781898ae43e066" name="ae8aeca5ac78f4dc73e781898ae43e066"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8aeca5ac78f4dc73e781898ae43e066">&#9670;&nbsp;</a></span>popChildren()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8aeca5ac78f4dc73e781898ae43e066">&#9670;&nbsp;</a></span>popChildren() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2817,8 +2849,36 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a992818be24c59894044c2d43c2192a1b" name="a992818be24c59894044c2d43c2192a1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a992818be24c59894044c2d43c2192a1b">&#9670;&nbsp;</a></span>rmChildren() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void myxmlpp::Node::rmChildren </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Method to remove all children of the node </p>
+
+<p class="definition">Definition at line <a class="el" href="Node__rmChildren_8cpp_source.html#l00015">15</a> of file <a class="el" href="Node__rmChildren_8cpp_source.html">Node_rmChildren.cpp</a>.</p>
+
+</div>
+</div>
 <a id="a2a944147ffa71ab1f214a70a07e7b49d" name="a2a944147ffa71ab1f214a70a07e7b49d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a944147ffa71ab1f214a70a07e7b49d">&#9670;&nbsp;</a></span>rmChildren()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a944147ffa71ab1f214a70a07e7b49d">&#9670;&nbsp;</a></span>rmChildren() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
