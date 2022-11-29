@@ -35,3 +35,13 @@ myxmlpp::Node::popChildren(const std::string& tag) noexcept
     } catch (NodeNotFoundException& e) {}
     return toPopNodes;
 }
+
+std::vector<std::shared_ptr<myxmlpp::Node>> myxmlpp::Node::popChildren() noexcept
+{
+    std::vector<std::shared_ptr<Node>> toPopNodes;
+
+    for (auto &c : _children)
+        toPopNodes.push_back(c);
+    _children.clear();
+    return toPopNodes;
+}
