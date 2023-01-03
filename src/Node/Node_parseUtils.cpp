@@ -13,7 +13,7 @@
 bool myxmlpp::Node::_isEndOfNode(std::string &str)
 {
     std::string rgx("[\r\n\t\f\v ]*(?:(?:<[a-zA-Z0-9_\\-]*"
-                    "(?:[\r\n\t\f\v ].*\"[\r\n\t\f\v ]*?)*/?>)|(?:<(/).*>))");
+                    "(?:[\r\n\t\f\v ].*\"[\r\n\t\f\v ]*?)* ?/?>)|(?:<(/).*>))");
     std::smatch matches;
 
     if (!_performRegex(matches, rgx, str, nullptr))
@@ -43,10 +43,10 @@ bool myxmlpp::Node::_performRegex(std::smatch &matches, std::string &regexStr,
 {
     std::regex rgx(regexStr);
     std::smatch remainingMatches;
-    bool res = std::regex_search(str, matches, rgx);
+    bool res = std::regex_search(str, matches, rgx, std::regex_constants::match_continuous);
 
     if (remaining) {
-        if (!std::regex_search(*remaining, remainingMatches, rgx))
+        if (!std::regex_search(*remaining, remainingMatches, rgx, std::regex_constants::match_continuous))
             throw myxmlpp::ParsingException(*remaining, MYXMLPP_ERROR_LOCATION,
                                             "Malformed file");
         remaining->replace(remainingMatches.position(),
@@ -59,7 +59,7 @@ bool myxmlpp::Node::_performRegex(std::smatch &matches, std::string &regexStr,
 void myxmlpp::Node::_parseNodeString(std::string &str, std::string &remaining)
 {
     std::string rgx("[\r\n\t\f\v ]*(<([a-zA-Z0-9_\\-]*)"
-                    "((?:[\r\n\t\f\v ](?:[^=]+)=\"(?:[^\"]*)\"[\r\n\t\f\v ]*?)*)"
+                    "((?:[\r\n\t\f\v ](?:[^=\r\n\t\f\v ]+)=\"(?:[^\"]*)\"[\r\n\t\f\v ]*?)*)"
                     "[\\r\\n\\t\\f\\v ]*(/?)>)");
     std::smatch matches;
 
@@ -85,7 +85,7 @@ void myxmlpp::Node::_extractAttributes(std::string &str) noexcept
     std::regex rgx("[\r\n\t\f\v ]*([a-zA-Z0-9_]+)=\"([^\"]*)\"");
     std::smatch matches;
 
-    while (std::regex_search(str, matches, rgx)) {
+    while (std::regex_search(str, matches, rgx, std::regex_constants::match_continuous)) {
         _attributes.push_back(
                 std::make_unique<Attribute>(matches[1], matches[2])
         );
